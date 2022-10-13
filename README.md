@@ -1,24 +1,4 @@
-# README
+# Dummy repo for https://github.com/rspec/rspec-rails/issues/2624
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run specs: `bundle exec rspec`
+Observe failures where there should be none.
