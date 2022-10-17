@@ -51,7 +51,11 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem "rspec-rails", "6.0.0"
+  gem "rspec-rails", github: "rspec/rspec-rails", branch: "replacement-tagged-logger-support"
+  gem "rspec-core", github: "rspec/rspec-core", ref: "71823ba11ec17a73b25bdc24ebab195494c270dc"
+  gem "rspec-mocks", github: "rspec/rspec-mocks", ref: "d9a782f750896e2a0d3c7abc72d4667dd0b83f0b"
+  gem "rspec-expectations", github: "rspec/rspec-expectations", ref: "311aaf245f2c5493572bf683b8c441cb5f7e44c8"
+  gem "rspec-support", github: "rspec/rspec-support", ref: "5d653dfd130d45a742ab2300662b624e191f76a0"
 end
 
 group :development do
